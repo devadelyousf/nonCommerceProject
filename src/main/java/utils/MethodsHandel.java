@@ -52,5 +52,10 @@ public class MethodsHandel {
         webElement(locator).sendKeys(text);
     }
 
+    protected String getText(By locator){
+        explicitWait(locator,20);
+        scrollIntoView(driver,webElement(locator));
+      return webElement(locator).getText();
+    }
 
 }

@@ -15,5 +15,11 @@
         "Password": "123"
       }
     }
-  }
+  },
+  "AssertLogin": [
+    ["adel@gmail.com","123"],
+    ["ali@gmail.com","456"],
+    ["mohamed@gmail.com","789"]
+  ],
+  "MessageWithLogin": "Login was unsuccessful. Please correct the errors and try again."
 }

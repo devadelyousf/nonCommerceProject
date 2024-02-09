@@ -13,7 +13,12 @@ public class LoginPage extends MethodsHandel {
     private final By emailInput=By.id("Email");
     private final By passwordInput=By.id("Password");
     private final By loginButton=By.cssSelector(".login-button");
+    private final By messageLogin=By.cssSelector(".message-error ");
 
+
+public  String messageLoginValidation(){
+  return   getText(messageLogin);
+}
     public void sendEmail(String email){
         sendKeys(emailInput,email);
     }
