@@ -11,6 +11,14 @@ public class HomePage extends MethodsHandel {
 
     private final By loginLink=By.cssSelector(".ico-login");
 
+    private final By digitalDownloadsLink=By.cssSelector(".title a[href=\"/digital-downloads\"]");
+
+
+    public DigitalDownloadPage clickOnDigitalDownloadsLink(){
+        click(digitalDownloadsLink);
+        return new DigitalDownloadPage(driver);
+    }
+
     public LoginPage clickOnLoginButton(){
         click(loginLink);
         return new LoginPage(driver);

@@ -11,7 +11,7 @@ import java.time.Duration;
 
 public class MethodsHandel {
  protected WebDriver driver;
-    WebDriverWait wait;
+   protected WebDriverWait wait;
     public MethodsHandel(WebDriver driver) {
         this.driver = driver;
     }
@@ -41,19 +41,19 @@ public class MethodsHandel {
 
     protected void click(By locator){
 //        invisibilityOf(loader,20);
-        explicitWait(locator,20);
+        explicitWait(locator,25);
         scrollIntoView(driver,webElement(locator));
         webElement(locator).click();
     }
     protected void sendKeys(By locator, String text){
 //        invisibilityOf(loader,20);
-        explicitWait(locator,20);
+        explicitWait(locator,25);
         scrollIntoView(driver,webElement(locator));
         webElement(locator).sendKeys(text);
     }
 
     protected String getText(By locator){
-        explicitWait(locator,20);
+        explicitWait(locator,25);
         scrollIntoView(driver,webElement(locator));
       return webElement(locator).getText();
     }
