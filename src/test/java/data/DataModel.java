@@ -5,5 +5,7 @@ public class DataModel {
     public Login Login;
     public Object [][] AssertLogin;
     public String MessageWithLogin;
+    public Register Register;
+    public String OrderValidation;
 
 }
